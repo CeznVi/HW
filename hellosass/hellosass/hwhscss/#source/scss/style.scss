@@ -1,0 +1,147 @@
+//Загрузка шрифта из гугл 
+@import url('https://../fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+// Файл обнуляющих стилей
+@import "nullstyle.scss";
+//Подключение шрифта из папаки фонт
+@font-face {
+	font-family: 'Conv_BlackOpsOne-Regular';
+	src: url('../fonts/BlackOpsOne-Regular.eot');
+	src: local('☺'), url('../fonts/BlackOpsOne-Regular.woff') format('woff'), url('../fonts/BlackOpsOne-Regular.ttf') format('truetype'), url('../fonts/BlackOpsOne-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+//Конец подключения 
+
+
+// Переменные 
+$color_1:#000000;
+
+// Шаблон №1
+.txtpattern{
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 18px;
+	line-height: 28px;
+	color: $color_1;
+}
+
+body{
+  background-color: #e8e8e8;
+}
+
+.content {
+	padding: 123px 310px 0px 291px;
+	max-width: 1440px;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+}
+
+.content_h1 {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	letter-spacing: 2.8px;
+	text-align: left;
+	color: $color_1;
+	text-transform: uppercase;
+	padding-bottom: 24px;
+}
+.spisok1{
+	margin-bottom: 80px;
+}	
+li{
+	&:before{
+		content: '';
+		height: 19px;
+		width: 25px;
+		padding: 0px 0px 0px 35px;
+		background: url('../img/icons/chek.svg') left no-repeat;
+	}
+	.first &, .two &{
+		font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+		font-size: 20px;
+		margin: 0px 0px 13px 0px;
+		padding: 0px 0px 0px 0px;
+	}
+	.first &:nth-child(1){
+		text-decoration: line-through;
+	}
+	.first &:nth-child(2){
+		font-weight: bold;
+	}
+	.first &:nth-child(3){
+		font-style: oblique;
+	}
+	.first &:nth-child(4){
+		text-transform: uppercase
+	}
+	.two &{
+		font-family: 'Indie Flower';
+		font-weight: 900;
+	}
+		.two &:hover:before{
+			content: '';
+			height: 19px;
+			width: 25px;
+			padding: 0px 0px 0px 35px;
+			background: url('../img/icons/checkicon-r.png') left no-repeat;
+		}
+}
+
+.spisok2 {
+	margin-bottom: 141px;
+}
+
+.actionblock{
+	margin-bottom: 118px;
+}
+
+.textbutton {
+	display: block;
+	height: 44px;
+	width: 200px;
+	margin-left: 16px;
+	margin-bottom: 125px;
+	background-color: #80b7b3;
+	border-radius: 24px;
+	box-shadow: 0px 6px 40px rgba(128, 183, 179, 0.54);
+		&:hover{
+			background: #3a5856;
+		}
+		&:active{
+			background: #818181;
+			box-shadow: none;
+		}
+}
+.txtb{
+	display: inline-block;
+	color: white;
+	text-transform: uppercase;
+	line-height: 40px;
+	font-size: 13px;
+	letter-spacing: 2.8px;
+		&::after{
+			content: '';
+			display: inline-block;
+			height: 14px;
+			width: 21px;
+			opacity: 0.8;
+			margin-left: 10px;
+			background: url('../img/icons/shape-2.svg') no-repeat;
+		}
+}
+
+.fst {
+	@extend .txtpattern;
+	margin-bottom: 43px;
+		&::first-line{
+		color: red;
+		}
+}
+.fstl {
+	font-family: Conv_BlackOpsOne-Regular;
+	font-size: 18px;
+	line-height: 28px;
+	color: $color_1;
+			&::first-letter{
+			color: red;
+			font-size: 25px;
+		}
+}

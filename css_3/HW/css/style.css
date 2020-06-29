@@ -1,0 +1,109 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+body{
+	width: 1280px;
+height: 3186px;
+margin-left: 50px;
+}
+
+div, span, a{
+	font-family: "Arial MT";
+	font-size: 14px;
+	line-height: 25px;
+}
+a{
+color: #000000;
+
+}
+
+.stok{
+margin-top: 53px;
+margin-bottom: 33px;
+
+	width: 611px;
+height: 64px;
+
+  
+}
+.as{
+display: block;
+margin-bottom: -12px;
+}
+.text{
+	height: 86px;
+	margin-top: 32px;
+margin-bottom: 34px;
+
+}
+
+.spant{
+display: inline;
+float: left;
+}
+
+.pstyle{
+margin-left: 41px;
+display: inline-block;
+}
+.atext{
+	line-height: 25px;
+}
+.twolinev2{
+	margin-bottom: 37px;
+}
+.spant1{
+	display: block;
+	float: left;
+	line-height: 25px;
+	width: 503px;
+	text-align: center;
+	margin-right: 42px;
+}
+.adown{
+	display: block;
+	line-height: 25px;
+	text-align: left;
+}
+.fottle{
+	display: block;
+	height: 111px;
+	width: 343px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+
+
+
+}
